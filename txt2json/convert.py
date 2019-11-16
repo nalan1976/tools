@@ -22,6 +22,8 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
     title = []
     title2 = []
     title3 = []
+    text4 = []
+    dict_text = {}
 
     is_top_title = False
     is_text = False
@@ -66,6 +68,21 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
         if is_text:
             # only match structure like "1.x"
             if re.match('^\d\.\d', line[:3]):
+                # if text4 is not empty, append text4 to dict, whether need deep copy?
+                if text4:
+                    # use the line as key, need the data match exactly!
+                    dict_text[line] = text4.copy()
+                # put the current line into the cur_title3, useful?
+                cur_title3 = line
+                # clear text[], prepare the next fill in data
+                text4.clear()
+                continue
+            # the last text4 data is not put into dict_text!
+            text4.append(line)
+
+
+
+
 
 
     pass

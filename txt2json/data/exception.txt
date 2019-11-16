@@ -1,5 +1,8 @@
 note following texts:
 
+program problem:
+# the last text4 data is not put into dict_text!
+
 must process:
 *
 extra line feed
