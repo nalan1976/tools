@@ -308,15 +308,6 @@ e.g. ‘chase’ game
 • Indicates when ready to end interaction
 e.g. signs ‘finish’
 
-
-Young people should be provided with means, reasons and opportunities to communicate and to be supported to make their needs, thoughts and feelings known. Some learners may benefit from alternative systems of communication which
-
-
-
-*Means of communication may include: gesture; vocalisation; signing; object of reference; photo; picture; symbol; written word; spoken word (learned phrase / spontaneous; single word, 2 / 3 word, sentence); AAC (Alternative and Augmentative Communication e.g. communication aid).
-
-should be chosen to suit individual needs and levels of development and used consistently across contexts. Children and young people may move from one means of communication to another as their communication develops. They may also progress in relation to systems of communication used e.g. moving from using a symbol strip to a communication book and then to an electronic (AAC) communication aid. The means of communication should be portable and ‘make sense’ to others e.g. learned phrases that relate to context rather than those based on own interests or echoing another’s words. Providing an effective means of communication can lead to increased autonomy and independence for the young person. Practitioners should ensure that responses to communication are immediate and rewarding so that learners make the link between their actions and the responses of others.
-Links with other PF areas: Engaging in interaction
 2.1 Makes request for an item (food, drink, object)
 • Requests item by ‘taking’ adult to object or place or visual representation of item
 May put adult’s hand on the object
@@ -369,16 +360,7 @@ e.g. where’s my bag?
 
 
 
-The ability of children and young people on the autism spectrum will vary widely and range from those who are very articulate to those who may be non-verbal. Ways in which communication can be supported should
-
-
-
-*Means of communication may include: gesture; vocalisation; signing; object of reference; photo; picture; symbol; written word; spoken word (learned phrase / spontaneous; single word, 2 / 3 word, sentence); AAC (Alternative and Augmentative Communication e.g. communication aid)
-
-therefore be made available and matched to needs.* Some young people may learn communicative responses appropriate to certain situations and use them without fully understanding their meaning and opportunities should be provided to ensure that contexts for communication are meaningful. Young people on the autism spectrum may not be aware that other people do not have the same information as they do and therefore may not understand the need to comment on events or volunteer information (or understand why they are being asked a question). They may also need support to understand that in certain situations it may not be appropriate or polite to express some feelings and thoughts.
-Links with other PF areas: Listening and understanding, Developing confidence and self-esteem, Understanding others’ emotions / intentions.
-3.1 
-Answers a question*
+3.1 Answers a question*
 • Answers familiar question within routine context
 e.g. as part of morning register. Be aware that this may be a learned phrase
 • Answers unanticipated question
@@ -400,8 +382,7 @@ e.g. as part of a structured ‘debate’
 • Gives reasons for opinions
 e.g. Supports opinions with relevant examples or facts
 • Accepts that others may agree / disagree with opinions
-3.4 
-Gives instructions / explanations
+3.4 Gives instructions / explanations
 • Gives instructions / explanations relating to activities / events in context
 e.g. during this activity – we will need…..
 • Gives instructions / explanations outside the context of an activity (abstract)
@@ -433,17 +414,7 @@ Be aware that perceptions of what is ‘important’ may differ
 
 
 
-Practitioners should ensure that individual levels of understanding are accurately assessed and that children and young people are supported in this area using appropriate strategies. Young people may not respond in conventional ways when listening and processing information and practitioners should be aware that looking away or being
-
-
-
-*Means of communication may include: gesture; vocalisation; signing; object of reference; photo; picture; symbol; written word; spoken word (learned phrase / spontaneous; single word, 2 / 3 word, sentence); AAC (Alternative and Augmentative Communication e.g. communication aid)
-
-engaged in another activity may not indicate a lack of attention. Young people on the autism spectrum may find spoken language difficult to follow and their understanding can be supported by using clear and uncomplicated language and by supporting speech with additional communication strategies such as signing or visual clarification. Learners may interpret language literally or have difficulty understanding the speaker’s intended meaning if this is not explicit. They may tend not to seek help either due to not recognising or not wanting to reveal difficulties. Figures of speech such as idioms can also be bewildering and support may be needed to help learners recognise this ‘type’ of language and how to seek help.
-Practitioners should also be aware that sensory processing issues may have an impact on the young person’s ability to attend to and understand information in certain situations and measures should be taken to ensure that the environment is as conducive to learning as possible. Young people may also need support to pick up on contextual clues to aid their understanding.
-Links with other PF areas: Communicating information / commenting on events, Greetings, Non-verbal communication, Conversations, Motivation and Engagement.
-4.1 
-Responds to sounds
+4.1 Responds to sounds
 • Recognises and responds to familiar sounds in the environment
 e.g. smiles when hears familiar theme tune
 • Responds to unfamiliar sounds.
@@ -467,9 +438,8 @@ e.g. ‘Give me your book’, ‘sit down’
 e.g. sit on the blue chair
 • Carries out a sequence of instructions
 e.g. go to the office to get the money then meet me at the door
-• 
-Responds to instruction to fetch an item from another
-location on request (and bring it back) e.g. Fetch the water
+• Responds to instruction to fetch an item from another location on request (and bring it back)
+e.g. Fetch the water
 • Delivers a message as instructed
 e.g. take the register to the office
 • Delivers a message in question form and recounts the answer
@@ -485,33 +455,16 @@ e.g. Who’s / what’s this? Where is the train? Within real context or picture
 • Indicates ‘I don’t know’ or ‘I don’t understand the question’ if unsure
 
 
-
-
-
-
-
-
-
-
-
-
-Links with other PF areas: Communicating information / commenting on events, Greetings, Non-verbal communication, Conversations, Motivation and Engagement.
-
-
-*Means of communication may include: gesture; vocalisation; signing; object of reference; photo; picture; symbol; written word; spoken word (learned phrase / spontaneous; single word, 2 / 3 word, sentence); AAC (Alternative and Augmentative Communication e.g. communication aid)
-
-
-
 4.6 Extracts relevant meaning / information
 • Understands overall / main topic being discussed
 i.e. gets the gist rather than focussing on minor details
 • Is able to extract information relevant to purpose from spoken information
 • Is able to deduce meaning from information
 e.g. hears someone say they need to fetch their umbrella so deduces it is raining outside
-• Is able to distinguish factual / fictional information (reality
-/ fantasy)
+• Is able to distinguish factual / fictional information (reality / fantasy)
 
-4.7 Understands humour and figurative speech Emphasis may be on recognising that they may need support to understand
+4.7 Understands humour and figurative speech
+Emphasis may be on recognising that they may need support to understand
 • Recognises jokes
 • Recognises and understands verbal jokes / puns
 • Enjoys jokes
@@ -521,9 +474,10 @@ Relevant and appropriate to age and learning level
 • Recognises and understands irony / sarcasm
 • Seeks help to understand figurative speech
 e.g. asks what is meant by ‘grabbing the bull by the horns’
-4.8 
-Understands informal speech / slang
-• Understands commonly used expressions appropriate to age e.g. teen slang
+
+4.8 Understands informal speech / slang
+• Understands commonly used expressions appropriate to age
+e.g. teen slang
 • Recognises when slang is being used and seeks advice as needed
 e.g. records words to ask a trusted friend or adult about later
 

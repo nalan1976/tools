@@ -1,3 +1,18 @@
+note following texts:
+
+must process:
+*
+extra line feed
+wrong line feed
+extra space after like "4.7"
+
+reserved:
+
 See Being with others for supporting the young person
 to accept the presence of others prior to engaging with them
+
+
+delete:
+all describe
+
 
