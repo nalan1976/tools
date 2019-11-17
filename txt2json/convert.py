@@ -23,17 +23,23 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
     title2 = []
     title3 = []
     text4 = []
+
     dict_text = {}
+    dict_title = {}
 
     is_top_title = False
+    is_title2_not_empty = False
     is_text = False
+
+    cur_title2 = ""
+
 
     for line in reader:
         line = line.strip('\n')
         # whether current line is the top level title
 
-        # print(line)
-        print(line, end="")
+        print(line)
+        # print(line, end="")
 
         # check data state and setup the important flag
         if StrTools.is_line_empty(line):
@@ -44,6 +50,9 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
             continue
 
         if line == Const.TEXT:
+            if title2 and title3:
+                dict_title[cur_title2] = title3.copy()
+                title3.clear()
             is_top_title = False
             is_text = True
             continue
@@ -53,15 +62,35 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
             # if the first character is not digit then it belong to the top level title
             if not line[:1].isdigit():
                 title.append(line)
+                if title2 and title3:
+                    dict_title[cur_title2] = title3.copy()
+                    title3.clear()
                 continue
 
-            # this judge(title3) has to come first, or the logic will be broken
+            # this judge(title3) has to come first, or the logic will be broken, judge title2 need match $
             if re.match('^\d\.\d', line[:3]):
                 title3.append(line)
                 continue
-            # how to append title2 to title?
+
             # if the first 2 characters are structure like "1." , they should be the second level title
             if re.match('^\d\.', line[:2]):
+                # find out the second structure like "1." and title2 is not empty
+                # if line[:1] == "1" and title2:
+                # if line[:1] == "1":
+                if cur_title2 and int(line[:1]) == int(cur_title2[:1]) + 1:
+                    dict_title[cur_title2] = title3.copy()
+                    title3.clear()
+                # else:
+                #     continue
+                    # if is_title2_not_empty and title2:
+                    #     dict_title[cur_title2] = title3.copy()
+                    #     is_title2_not_empty = False
+                    # else:
+                    #     is_title2_not_empty = True
+                    #     continue
+
+                cur_title2 = line
+
                 title2.append(line)
                 continue
 
@@ -71,7 +100,7 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
                 # if text4 is not empty, append text4 to dict, whether need deep copy?
                 if text4:
                     # use the line as key, need the data match exactly!
-                    dict_text[line] = text4.copy()
+                    dict_text[line] = text4.copy() #should be cur_title3?
                 # put the current line into the cur_title3, useful?
                 cur_title3 = line
                 # clear text[], prepare the next fill in data
@@ -80,7 +109,11 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
             # the last text4 data is not put into dict_text!
             text4.append(line)
 
+    # make the dict_title
 
+    for idx_title2 in title2:
+        for idx_title3 in title3:
+            dict_title[title2[idx_title2]] = title3[idx_title3]
 
 
 

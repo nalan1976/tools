@@ -1,7 +1,8 @@
 note following texts:
 
 program problem:
-# the last text4 data is not put into dict_text!
+# the last text4 data is not put into dict_text! either the title3
+#should be cur_title3?
 
 must process:
 *
