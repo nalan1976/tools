@@ -16,6 +16,7 @@ class StrTools(object):
 
 Const.TITLE = "[ailink-content]"
 Const.TEXT = "[ailink-text]"
+Const.EOF = "[ailink-end]"
 
 def dump_json(dtitle, dtext):
     # json = "{"
@@ -140,6 +141,8 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
                 continue
             # the last text4 data is not put into dict_text!
             text4.append(line)
+        if line == Const.EOF:
+            dict_text[cur_title3] = text4[:-1].copy()
 
     # all the data are ready, prepare to output json
     dump_json(dict_title, dict_text)
