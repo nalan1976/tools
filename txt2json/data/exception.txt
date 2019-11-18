@@ -9,6 +9,7 @@ must process:
 extra line feed
 wrong line feed
 extra space after like "4.7"
+each [ailink-text] the first paragraph like "1. Engaging in interaction", need to remove
 
 reserved:
 
@@ -17,7 +18,19 @@ to accept the presence of others prior to engaging with them
 
 
 delete:
-all describe
+1. Engaging in interaction
+
+This area focuses on developing fundamental communication skills through interaction with a supporting adult. The aim is to create enjoyable and meaningful interactions whereby the adult ‘tunes in’ and responds to the learner in order to develop their enjoyment of the interaction and to provide them with reasons and opportunities to communicate. This developing understanding of the social nature of communication underpins learning in this area.
+Links with other PF areas: Being with others, Positive relationships (supporting adults), Interactive play.
+
+Tools for teachers
+Tool 4 - Conversation Starters Tool 8 - Communication cards
+Tool 13 - Appropriate Voice Level cards
+Tool 30 - Guidance for using visual strategies
+
+
+
+
 
 data = { "programmers": [
 

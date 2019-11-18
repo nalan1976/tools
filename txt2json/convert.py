@@ -25,6 +25,11 @@ def dump_json(dtitle, dtext):
     # json += "}"
     # return json
 
+    # build the data structure
+    dict1 = {}
+    for t1 in title:
+        dict1[t1] = list1
+
     # correct format
     data = {"title": [{"title2": [{"title3": [{"type1": 1}, {"type2": 2}, {"type3": 3}]}]}]}
 
@@ -39,8 +44,8 @@ def read_json():
     with open("output\output.json", "r") as json_file:
         data = json.load(json_file)
         print(data)
-dump_json(1,1)
-read_json()
+# dump_json(1,1)
+# read_json()
 
 
 with open("data/input.txt", "r", encoding="utf8") as reader:
@@ -127,7 +132,7 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
                 # if text4 is not empty, append text4 to dict, whether need deep copy?
                 if text4:
                     # use the line as key, need the data match exactly!
-                    dict_text[line] = text4.copy() #should be cur_title3?
+                    dict_text[cur_title3] = text4.copy() #should be cur_title3?
                 # put the current line into the cur_title3, useful?
                 cur_title3 = line
                 # clear text[], prepare the next fill in data
