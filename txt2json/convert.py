@@ -1,6 +1,6 @@
 import Const
 import re
-
+import json
 
 class StrTools(object):
 
@@ -16,6 +16,32 @@ class StrTools(object):
 
 Const.TITLE = "[ailink-content]"
 Const.TEXT = "[ailink-text]"
+
+def dump_json(dtitle, dtext):
+    # json = "{"
+    # for k, v in dtitle.items():
+    #     for key in dtext.keys():
+    #
+    # json += "}"
+    # return json
+
+    # correct format
+    data = {"title": [{"title2": [{"title3": [{"type1": 1}, {"type2": 2}, {"type3": 3}]}]}]}
+
+
+
+
+    print(json.dumps(data))
+    with open("output\output.json", 'w') as json_file:
+        json.dump(data, json_file)
+
+def read_json():
+    with open("output\output.json", "r") as json_file:
+        data = json.load(json_file)
+        print(data)
+dump_json(1,1)
+read_json()
+
 
 with open("data/input.txt", "r", encoding="utf8") as reader:
     # list title is the top list which save the top level title
@@ -50,6 +76,7 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
             continue
 
         if line == Const.TEXT:
+            # fill in the last dict_title
             if title2 and title3:
                 dict_title[cur_title2] = title3.copy()
                 title3.clear()
@@ -109,11 +136,9 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
             # the last text4 data is not put into dict_text!
             text4.append(line)
 
-    # make the dict_title
+    # all the data are ready, prepare to output json
+    dump_json(dict_title, dict_text)
 
-    for idx_title2 in title2:
-        for idx_title3 in title3:
-            dict_title[title2[idx_title2]] = title3[idx_title3]
 
 
 
