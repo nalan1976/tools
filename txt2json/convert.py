@@ -2,6 +2,7 @@ import Const
 import re
 import json
 
+
 class StrTools(object):
 
     @staticmethod
@@ -12,6 +13,14 @@ class StrTools(object):
             return True
         else:
             return False
+
+
+class ContainerTools(object):
+
+    @staticmethod
+    def dict_slice(adict, condition):
+        dict_slice = {key: value for key, value in dict_text.items() if key[:1] == condition}
+        return dict_slice
 
 
 Const.TITLE = "[ailink-content]"
@@ -28,9 +37,26 @@ def dump_json(dtitle, dtext):
 
     # build the data structure
     dict1 = {}
-    for t1 in title:
-        dict1[t1] = list1
+    dict2 = {}
+    dict3 = {}
 
+    list1 = []
+    list2 = []
+    # the first character of the dict_text's key
+    first = ""
+    dtext_start = 0
+    dtext_end = 0
+    # ctool = ContainerTools()
+    for dtext_k, dtext_v in dict_text.items():
+        # if the first character has changed, that means the dict3 should end
+        if first != "" and first != dtext_k[:1]:
+            list2.append(ContainerTools.dict_slice(dict_text, first[:1]))
+            dtext_start = dtext_end
+
+        first = dtext_k[:1]
+        dtext_end += 1
+    # put the last data into list2
+    list2.append(ContainerTools.dict_slice(dict_text, first[:1]))
     # correct format
     data = {"title": [{"title2": [{"title3": [{"type1": 1}, {"type2": 2}, {"type3": 3}]}]}]}
 
