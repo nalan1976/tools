@@ -13,8 +13,7 @@ each [ailink-text] the first paragraph like "1. Engaging in interaction", need t
 
 reserved:
 
-See Being with others for supporting the young person
-to accept the presence of others prior to engaging with them
+See Being with others for supporting the young person to accept the presence of others prior to engaging with them
 
 
 delete:

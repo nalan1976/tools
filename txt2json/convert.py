@@ -1,6 +1,8 @@
 import Const
 import re
 import json
+# from copy import deepcopy
+from goto import with_goto
 
 
 class StrTools(object):
@@ -19,22 +21,95 @@ class ContainerTools(object):
 
     @staticmethod
     def dict_slice(adict, condition):
-        dict_slice = {key: value for key, value in dict_text.items() if key[:1] == condition}
+        """
+            dictionary slice
+        """
+        dict_slice = {key: value for key, value in adict.items() if key[:1] == condition}
         return dict_slice
+
+    @staticmethod
+    def list_slice(alist, condition):
+        """
+            list slice
+        """
+        list_slice = []
+        [list_slice for value in alist if value[:1] == condition]
+        return list_slice
 
 
 Const.TITLE = "[ailink-content]"
 Const.TEXT = "[ailink-text]"
 Const.EOF = "[ailink-end]"
 
-def dump_json(dtitle, dtext):
-    # json = "{"
-    # for k, v in dtitle.items():
-    #     for key in dtext.keys():
-    #
-    # json += "}"
-    # return json
 
+@with_goto
+def dump_json(ltitle, dtitle, dtext):
+    # build the data structure
+    dict1 = {}
+    dict2 = {}
+    dict3 = {}
+    dict4 = {}
+
+    list1 = []
+    list2 = []
+    list3 = []
+    list4 = []
+    # put the dtitle.key into the list_title
+    list_title = []
+    list_title_index = 0
+    for k in dtitle.keys():
+        list_title.append(k)
+
+    # populating dict4, list4, dict3 and list3
+    """
+        k like "1. Engaging in interaction"
+        v like "1.1 Responds positively to familiar adult"
+        l is the lowest node like "• Responds positively to physical contact"
+    """
+    for lt in ltitle:
+        cur_k = ""
+        for k, v in dtext.items():
+            for l in v:
+                dict4["text"] = l
+                dict4["level"] = 3
+                list4.append(dict4.copy())
+                dict4.clear()
+            dict3["children"] = list4.copy()
+            list4.clear()
+            dict3["level"] = 2
+            dict3["text"] = k
+
+            # populating dict2 which save like "1. Engaging in interaction"
+            if cur_k != "" and cur_k[:1] != k[:1]:
+                if list_title_index < len(list_title):
+                    dict2["text"] = list_title[list_title_index]
+                    list_title_index += 1
+                dict2["level"] = 1
+                dict2["children"] = list3.copy()
+                list3.clear()
+                list2.append(dict2.copy())
+                dict2.clear()
+
+            list3.append(dict3.copy())
+            dict3.clear()
+            cur_k = k
+        # repeat code : Bad code smell
+        if list_title_index < len(list_title):
+            dict2["text"] = list_title[list_title_index]
+            list_title_index += 1
+        dict2["level"] = 1
+        dict2["children"] = list3.copy()
+        list3.clear()
+        list2.append(dict2.copy())
+        dict2.clear()
+        # put list2 into dict1
+        dict1["children"] = list2.copy()
+        list2.clear()
+        dict1["text"] = lt
+        dict1["level"] = 0
+        list1.append(dict1.copy())
+        dict1.clear()
+    """
     # build the data structure
     dict1 = {}
     dict2 = {}
@@ -44,35 +119,51 @@ def dump_json(dtitle, dtext):
     list2 = []
     # the first character of the dict_text's key
     first = ""
-    dtext_start = 0
-    dtext_end = 0
+    # dtext_start = 0
+    # dtext_end = 0
     # ctool = ContainerTools()
-    for dtext_k, dtext_v in dict_text.items():
+    for dtext_k, dtext_v in dtext.items():
         # if the first character has changed, that means the dict3 should end
         if first != "" and first != dtext_k[:1]:
-            list2.append(ContainerTools.dict_slice(dict_text, first[:1]))
-            dtext_start = dtext_end
+            list2.append(ContainerTools.dict_slice(dtext, first[:1]))
+            # dtext_start = dtext_end
 
         first = dtext_k[:1]
-        dtext_end += 1
+        # dtext_end += 1
     # put the last data into list2
-    list2.append(ContainerTools.dict_slice(dict_text, first[:1]))
+    list2.append(ContainerTools.dict_slice(dtext, first[:1]))
+
+    # populating dict2
+    list2_idx = 0
+    for dtitle_k in dtitle.keys():
+        if list2_idx < len(list2):
+            dict2[dtitle_k] = list2[list2_idx]
+            list2_idx += 1
+        else:
+            break
+
+    # populating list1
+    list1.append(dict2)
+
+    # populating dict1
+    dict1[title[0]] = list1
+    """
     # correct format
     data = {"title": [{"title2": [{"title3": [{"type1": 1}, {"type2": 2}, {"type3": 3}]}]}]}
 
 
-
+    # data = dict1
 
     print(json.dumps(data))
-    with open("output\output.json", 'w') as json_file:
+    with open("output\output.json", 'w', encoding="utf8") as json_file:
         json.dump(data, json_file)
 
 def read_json():
-    with open("output\output.json", "r") as json_file:
+    with open("output\output.json", "r", encoding="utf8") as json_file:
         data = json.load(json_file)
         print(data)
 # dump_json(1,1)
-# read_json()
+
 
 
 with open("data/input.txt", "r", encoding="utf8") as reader:
@@ -171,9 +262,9 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
             dict_text[cur_title3] = text4[:-1].copy()
 
     # all the data are ready, prepare to output json
-    dump_json(dict_title, dict_text)
+    dump_json(title, dict_title, dict_text)
 
-
+    read_json()
 
 
 
