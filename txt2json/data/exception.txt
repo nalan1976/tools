@@ -5,6 +5,7 @@ program problem:
 #should be cur_title3?
 
 must process:
+"e.g." is not at the beginning of a line
 extra line feed
 wrong line feed
 extra space after like "4.7"

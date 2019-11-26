@@ -2,89 +2,26 @@
 {   //dict1
 	"text": "Communication and interaction",
 	"level": 0,
-	"children": [{
+	"children": [//list2
+{//dict2
 		"text": "1. Engaging in interaction",
 		"level": 1,
-		"children": [{
+		"children": [//list3
+{//dict3
 			"text": "1.1 Responds positively to familiar adult",
 			"level": 2,
-			"children": [{
+			"children": [//list4
+{//dict4
 					"text": "• Responds positively to physical contact",
 					"level": 3
-				},
-				{
+					},
+					{
 					"text": "Be aware that some children / young people may be sensitive to touch due to sensory needs",
 					"level": 3
+					}
+					]//list4
 				}
-			]
-		}]
-	}]
+]//list3
+		}
+]//list2
 }]
-
-[{
-	"text": "Communication and interaction",
-	"level": 0,
-	"children": [{
-		"text": "Engaging in interaction",
-		"level": 1,
-		"children": [{
-			"text": "1.1 Responds positively to familiar adult",
-			"level": 2,
-			"children": [{
-					"text": "• Responds positively to physical contact",
-					"level": 3
-				},
-				{
-					"text": "Be aware that some children / young people may be sensitive to touch due to sensory needs",
-					"level": 3
-				}
-			]
-		}]
-	}]
-}]
-
-
-{
-    [
-        "text":"Communication and interaction",
-        "level":0,
-        "children":[{
-            "text":"Engaging in interaction"
-            "level":1
-            "children":[{
-                "text":"Responds positively to familiar adult"
-                "level":1.1
-                "children":[
-                    {
-                        "text":"• Responds positively to physical contact"
-                        "level":null
-                    },
-                    {
-                        "text":"Be aware that some children / young people may be sensitive to touch due to sensory needs"
-                        "level":null
-                    }
-
-                ]
-            }]
-        }]
-    ]
-
-}
-
-
-
-
-question:
-1. What if the lowest node doesn't exist "level"?
-2. the field "level" is String or number?
-
-
-        "children":[{
-            "text":""
-            "level":1
-            "children":[{
-
-            }]
-
-
-{"title": [{"title2": [{"title3": [{"type1": 1}, {"type2": 2}, {"type3": 3}]}]}]}

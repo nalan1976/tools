@@ -117,45 +117,6 @@ def dump_json(ltitle, dtitle, dtext):
         if idx_dtext >= len(dtext):
             break
 
-    """
-    # build the data structure
-    dict1 = {}
-    dict2 = {}
-    dict3 = {}
-
-    list1 = []
-    list2 = []
-    # the first character of the dict_text's key
-    first = ""
-    # dtext_start = 0
-    # dtext_end = 0
-    # ctool = ContainerTools()
-    for dtext_k, dtext_v in dtext.items():
-        # if the first character has changed, that means the dict3 should end
-        if first != "" and first != dtext_k[:1]:
-            list2.append(ContainerTools.dict_slice(dtext, first[:1]))
-            # dtext_start = dtext_end
-
-        first = dtext_k[:1]
-        # dtext_end += 1
-    # put the last data into list2
-    list2.append(ContainerTools.dict_slice(dtext, first[:1]))
-
-    # populating dict2
-    list2_idx = 0
-    for dtitle_k in dtitle.keys():
-        if list2_idx < len(list2):
-            dict2[dtitle_k] = list2[list2_idx]
-            list2_idx += 1
-        else:
-            break
-
-    # populating list1
-    list1.append(dict2)
-
-    # populating dict1
-    dict1[title[0]] = list1
-    """
     # correct format
     # data = {"title": [{"title2": [{"title3": [{"type1": 1}, {"type2": 2}, {"type3": 3}]}]}]}
 
@@ -251,12 +212,12 @@ with open("data/input.txt", "r", encoding="utf8") as reader:
                 continue
 
         if is_text:
-            # only match structure like "1.x"
-            if re.match('^\d\.\d', line[:3]):
+            # only match structure like "1.1 " or "1.11"
+            if re.match('^\d\.\d[\d\s]', line[:4]):
                 # if text4 is not empty, append text4 to dict, whether need deep copy?
                 if text4:
-                    # if meet "1.1" and text4 is not empty then populating list4dcit_text
-                    if "1.1" == line[:3]:
+                    # if meet "1.1 " and text4 is not empty then populating list4dcit_text
+                    if "1.1 " == line[:4]:
                         dict_text[cur_title3] = text4.copy()
                         list4dcit_text.append(dict_text.copy())
                         dict_text.clear()
