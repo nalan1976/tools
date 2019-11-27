@@ -2,7 +2,7 @@ import Const
 import re
 import json
 # from copy import deepcopy
-from goto import with_goto
+# from goto import with_goto
 
 
 class StrTools(object):
@@ -42,7 +42,7 @@ Const.TEXT = "[ailink-text]"
 Const.EOF = "[ailink-end]"
 
 
-@with_goto
+# @with_goto
 def dump_json(ltitle, dtitle, dtext):
     # build the data structure
     dict1 = {}
