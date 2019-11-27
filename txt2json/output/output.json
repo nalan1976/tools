@@ -431,7 +431,10 @@
 				"text": "e.g. \u2018Give me your book\u2019, \u2018sit down\u2019",
 				"level": 3
 			}, {
-				"text": "\u2022 Responds to direction to stop / finish what they are doing With prior warning e.g. 2 more minutes / visual support",
+				"text": "\u2022 Responds to direction to stop / finish what they are doing With prior warning",
+				"level": 3
+			}, {
+				"text": "e.g. 2 more minutes / visual support",
 				"level": 3
 			}, {
 				"text": "\u2022 Understands instruction with more than one element",
@@ -615,7 +618,10 @@
 				"text": "e.g. hug, handshake (taking into account own preferences)",
 				"level": 3
 			}, {
-				"text": "\u2022 Takes lead from another as to appropriate greeting to use This might range from clear guidance to subtle cues e.g. responds to peer\u2019s \u2018High 5\u2019 or grandad\u2019s handshake",
+				"text": "\u2022 Takes lead from another as to appropriate greeting to use This might range from clear guidance to subtle cues",
+				"level": 3
+			}, {
+				"text": "e.g. responds to peer\u2019s \u2018High 5\u2019 or grandad\u2019s handshake",
 				"level": 3
 			}]
 		}]
@@ -1180,7 +1186,10 @@
 				"text": "\u2022 Stays engaged with activity / conversation when on another\u2019s agenda / topic",
 				"level": 3
 			}, {
-				"text": "\u2022 Asks rather than tells when planning what they are going to do e.g. \u201cshall we play \u2026..?\u201d rather than \u201cWe\u2019re playing \u2026.\u201d",
+				"text": "\u2022 Asks rather than tells when planning what they are going to do",
+				"level": 3
+			}, {
+				"text": "e.g. \u201cshall we play \u2026..?\u201d rather than \u201cWe\u2019re playing \u2026.\u201d",
 				"level": 3
 			}, {
 				"text": "\u2022 Accepts if peer declines, rejects interaction or terminates the interaction",
@@ -1189,7 +1198,10 @@
 				"text": "\u2022 Accepts that people may have more than one friend",
 				"level": 3
 			}, {
-				"text": "\u2022 Accepts that peers may vary who they play / spend time with e.g. may play with different people during some break times",
+				"text": "\u2022 Accepts that peers may vary who they play / spend time with",
+				"level": 3
+			}, {
+				"text": "e.g. may play with different people during some break times",
 				"level": 3
 			}, {
 				"text": "\u2022 Negotiates change of activity",
@@ -1493,10 +1505,16 @@
 				"text": "e.g. ear defenders, MP3 player with preferred music",
 				"level": 3
 			}, {
-				"text": "\u2022 Calms / alerts / regulates behaviour in response to olfactory input (smell) e.g. aromatherapy oils",
+				"text": "\u2022 Calms / alerts / regulates behaviour in response to olfactory input (smell)",
 				"level": 3
 			}, {
-				"text": "\u2022 Calms / alerts / regulates behaviour in response to visual input e.g. change of lighting",
+				"text": "e.g. aromatherapy oils",
+				"level": 3
+			}, {
+				"text": "\u2022 Calms / alerts / regulates behaviour in response to visual input",
+				"level": 3
+			}, {
+				"text": "e.g. change of lighting",
 				"level": 3
 			}, {
 				"text": "\u2022 Calms / alerts / regulates behaviour in response to gustatory (taste) input",
@@ -2244,7 +2262,10 @@
 			"text": "2.2 Uses own strategies to manage stress",
 			"level": 2,
 			"children": [{
-				"text": "\u2022 Is able to comfort self / self-soothe when experiencing mild distress e.g. using a comfort object",
+				"text": "\u2022 Is able to comfort self / self-soothe when experiencing mild distress",
+				"level": 3
+			}, {
+				"text": "e.g. using a comfort object",
 				"level": 3
 			}, {
 				"text": "\u2022 Uses own strategies to self-regulate / distract self",
@@ -2253,7 +2274,10 @@
 				"text": "e.g. using behaviour such as humming, spinning, rocking",
 				"level": 3
 			}, {
-				"text": "\u2022 Refrains from unhelpful or damaging ways of managing stress e.g. self-harm; breaking objects",
+				"text": "\u2022 Refrains from unhelpful or damaging ways of managing stress",
+				"level": 3
+			}, {
+				"text": "e.g. self-harm; breaking objects",
 				"level": 3
 			}]
 		}, {
@@ -2995,7 +3019,10 @@
 				"text": "e.g. following a task sheet",
 				"level": 3
 			}, {
-				"text": "\u2022 Follows instructions about what they are required to do This may need to be non-directive e.g. depersonalised visual instructions",
+				"text": "\u2022 Follows instructions about what they are required to do This may need to be non-directive",
+				"level": 3
+			}, {
+				"text": "e.g. depersonalised visual instructions",
 				"level": 3
 			}, {
 				"text": "\u2022 Attends to others taking turn within activity",
@@ -3920,7 +3947,10 @@
 			"text": "3.4 Understands personal space",
 			"level": 2,
 			"children": [{
-				"text": "\u2022 Maintains social distance appropriate to situation And what they are comfortable with e.g. understands their right to move away if they feel their space is invaded by another",
+				"text": "\u2022 Maintains social distance appropriate to situation And what they are comfortable with",
+				"level": 3
+			}, {
+				"text": "e.g. understands their right to move away if they feel their space is invaded by another",
 				"level": 3
 			}]
 		}, {
@@ -4269,7 +4299,10 @@
 			"text": "1.8 Prepares to go shopping",
 			"level": 2,
 			"children": [{
-				"text": "\u2022 Plans what they need to buy e.g. makes a list",
+				"text": "\u2022 Plans what they need to buy",
+				"level": 3
+			}, {
+				"text": "e.g. makes a list",
 				"level": 3
 			}, {
 				"text": "\u2022 Identifies which shop / s they will need to visit",
@@ -4347,7 +4380,10 @@
 				"text": "\u2022 Prepares equipment for household tasks",
 				"level": 3
 			}, {
-				"text": "\u2022 Safely uses household appliances e.g. vacuum cleaner",
+				"text": "\u2022 Safely uses household appliances",
+				"level": 3
+			}, {
+				"text": "e.g. vacuum cleaner",
 				"level": 3
 			}, {
 				"text": "\u2022 Safely uses household products",
